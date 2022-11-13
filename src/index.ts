@@ -1,1 +1,1 @@
-import { UserConfig } from 'vite';
+export { Config } from './Config';
