@@ -1,0 +1,24 @@
+{
+  "name": "vite-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadyMind/vite-chain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShadyMind/vite-chain/issues"
+  },
+  "homepage": "https://github.com/ShadyMind/vite-chain#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3"
+  }
+}
