@@ -26,7 +26,11 @@ export class Leaf<Path extends string> implements ConfigLeaf<Path> {
     return this.parent;
   }
 
-  when(detectFn: ContextFn<Path, boolean>, thenBranchFn: ContextFn<Path>, ifNotBranchFn: ContextFn<Path>) {
+  when(
+    detectFn: ContextFn<Path, boolean>,
+    thenBranchFn: ContextFn<Path>,
+    ifNotBranchFn: ContextFn<Path>
+  ) {
     const config = this.toConfig();
     const isPositive = detectFn(config);
     let executable: ContextFn<Path>;
@@ -59,7 +63,11 @@ export class Leaf<Path extends string> implements ConfigLeaf<Path> {
       fn = ref;
     }
 
-    fn(this.toConfig());
+    const result = fn(this.toConfig());
+
+    if (result instanceof Promise) {
+
+    }
 
     return this;
 
